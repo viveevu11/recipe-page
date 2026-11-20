@@ -57,22 +57,64 @@
       img {
         max-width: 100%;
         border-radius: 12px;
+        margin-bottom: 1.5rem;
       }
       .recipe-card {
         background-color: white;
         border-radius: 24px;
         max-width: 736px;
         padding: 2.5rem;
+        box-sizing: border-box;
       }
       h1,
       h2 {
         font-family: "YoungSerif";
         font-weight: 400;
+        margin: 0;
+        line-height: 100%;
+      }
+      p {
+        margin: 0;
+      }
+      ul,
+      ol {
+        margin: 1rem 0 0 0;
       }
       p,
       li,
       tr {
         font-family: "Outfit";
+        color: hsl(30, 10%, 34%);
+        line-height: 150%;
+        font-size: 16px;
+      }
+      h2 {
+        color: hsl(14, 45%, 36%);
+      }
+      .preparation h2 {
+        color: hsl(332, 51%, 32%);
+        font-family: "Outfit";
+      }
+      .preparation {
+        background-color: hsl(330, 100%, 98%);
+        padding: 1.5rem;
+        border-radius: 12px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
       }
     </style>
   </head>
@@ -80,19 +122,21 @@
     <main>
       <article class="recipe-card">
         <img src="./assets/images/image-omelette.jpeg" alt="Omelette" />
-        <h1>Simple Omelette Recipe</h1>
+        <header class="intro">
+          <h1>Simple Omelette Recipe</h1>
 
-        <p>
-          An easy and quick dish, perfect for any meal. This classic omelette
-          combines beaten eggs cooked to perfection, optionally filled with your
-          choice of cheese, vegetables, or meats.
-        </p>
-        <aside>
+          <p>
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
+        </header>
+        <aside class="preparation">
           <h2>Preparation time</h2>
           <ul>
-            <li>Total: Approximately 10 minutes</li>
-            <li>Preparation: 5 minutes</li>
-            <li>Cooking: 5 minutes</li>
+            <li><strong>Total:</strong> Approximately 10 minutes</li>
+            <li><strong>Preparation:</strong> 5 minutes</li>
+            <li><strong>Cooking:</strong> 5 minutes</li>
           </ul>
         </aside>
         <section>
